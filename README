@@ -1,0 +1,3 @@
+TODO
+ - create bootstrap.sh
+ - rename files with leading dot('.') to just capitalized (aka 'Bash_rc' vs '.bashrc')
