@@ -3,11 +3,9 @@
 # Their tunings seem more geared toward a desktop machine that never sleeps.
 # We have a laptop.
 
-# our XQuartz settings
-defaults write org.macosforge.xquartz.X11 enable_fake_buttons -bool true
-defaults write org.macosforge.xquartz.X11 enable_key_equivalents -bool false
-defaults write org.macosforge.xquartz.X11 option_sends_alt -bool true
-defaults write org.macosforge.xquartz.X11 sync_keymap -bool false
+##################
+# SYSTEM Settings
+##################
 
 # Enable local Time Machine snapshots
 sudo tmutil enablelocal
@@ -28,6 +26,7 @@ defaults write NSGlobalDomain AppleLanguages -array "en"
 defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Inches"
 defaults write NSGlobalDomain AppleMetricUnits -bool false
+
 
 
 
@@ -57,7 +56,7 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Things to investigate for later
 # com.apple.symbolichotkeys
@@ -102,6 +101,14 @@ defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+
+################
+# UI UX
+################
+
+# Increase window resize speed for Cocoa applications
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 
 ###############################################################################
@@ -165,3 +172,11 @@ defaults write com.ragingmenace.MenuMeters NetGraphStyle -int 1
 defaults write com.ragingmenace.MenuMeters NetOrientation -int 0
 defaults write com.ragingmenace.MenuMeters NetThroughput1KBound -int 1
 defaults write com.ragingmenace.MenuMeters NetThroughputLabel -int 1
+
+#########################
+# XQuartz (X11)
+########################
+defaults write org.macosforge.xquartz.X11 enable_fake_buttons -bool true
+defaults write org.macosforge.xquartz.X11 enable_key_equivalents -bool false
+defaults write org.macosforge.xquartz.X11 option_sends_alt -bool true
+defaults write org.macosforge.xquartz.X11 sync_keymap -bool false
