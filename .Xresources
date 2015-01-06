@@ -18,6 +18,7 @@ xterm*cursorColor:              blue
 xterm*metaSendsEscape:   true
 xterm*eightBitInput:            false
 
+! http://www.tldp.org/HOWTO/Keyboard-and-Console-HOWTO-5.html
 ! send delete(127) when using the <BackSpace> key
 xterm.vt100.backarrowKey:       false
 xterm.vt100.reverseVideo:       false
