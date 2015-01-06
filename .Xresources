@@ -18,12 +18,14 @@ xterm*cursorColor:              blue
 xterm*metaSendsEscape:   true
 xterm*eightBitInput:            false
 
+! send delete(127) when using the <BackSpace> key
+xterm.vt100.backarrowKey:       false
 xterm.vt100.reverseVideo:       false
 !xterm.vt100.foreground:         yellow
 !xterm.vt100.background:         black
 xterm.vt100.saveLines:          1023
 xterm.vt100.scrollBar:          false
-xterm.vt100.deleteIsDEL:        true
+xterm.vt100.deleteIsDEL:        false
 xterm.vt100.visualBell:         true
 xterm.vt100.popOnBell:          true
 
@@ -31,6 +33,10 @@ xterm*charClass: \
   33:48,36-38:48,43-47:48,58:48,61:48,63-64:48,126:48
 !  !    $ % &    +,-./    :     =     ? @      ~
 
+! If you are unable to use stty...
+!
+! XTerm*ttymodes: erase ^? kill ^U intr ^C quit ^\ eof ^D \
+!                susp ^Z start ^Q stop ^S eol undef eol2 undef
 
 XTerm*VT100.Translations: #override \
 ~Shift <KeyPress> Help: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
