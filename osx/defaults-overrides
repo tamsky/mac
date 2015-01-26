@@ -151,9 +151,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults delete com.google.Chrome ExtensionInstallSources 2>&1 >/dev/null
 defaults delete com.google.Chrome.canary ExtensionInstallSources 2>&1 >/dev/null
 
-# Enable the (arguably) too sensitive backswipe:
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool true
-defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool true
+# Disable the (arguably) too sensitive backswipe:
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
 
 # Use the system-native print preview dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
