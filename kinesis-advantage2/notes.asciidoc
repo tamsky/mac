@@ -1,13 +1,20 @@
-http://www.kinesis-ergo.com/wp-content/uploads/2016/09/ADV2-Firmware-Tech-Notes_9-20-16.pdf
+# Model Advantage2 Resources
 
-Advantage2 Firmware Update (above)
+- http://www.kinesis-ergo.com/advantage2-resources/
+
+Advantage2 Firmware Update & Changelog
+
+- http://www.kinesis-ergo.com/wp-content/uploads/2016/09/ADV2-Firmware-Tech-Notes_9-20-16.pdf
 
 
-http://www.kinesis-ergo.com/wp-content/uploads/2016/09/Advantage2-Users-Manual-9-7-16.pdf
-
-User Manual (contains token names in Appendix)
 
 
+# User Manual (contains token names in Appendix)
+
+- http://www.kinesis-ergo.com/wp-content/uploads/2016/09/Advantage2-Users-Manual-9-7-16.pdf
+
+
+# Workflow
 
 - Mount filesystem Prog + F1
 
@@ -16,3 +23,7 @@ User Manual (contains token names in Appendix)
 - hdiutil eject /Volumes/KINESIS\ KB/
 
 - power cycle keyboard
+
+when satisfied
+
+- copy to repo, commit.
