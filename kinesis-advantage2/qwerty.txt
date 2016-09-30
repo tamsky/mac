@@ -3,4 +3,10 @@
 [intl-\]>[kp-insert]
 [lalt]>[rwin]
 [rwin]>[lalt]
+[f3]>[prev]
+[f4]>[play]
+[f5]>[next]
+[f9]>[mute]
+[f10]>[vol-]
+[f11]>[vol+]
 {caps}>{-rwin}{`}{+rwin}
