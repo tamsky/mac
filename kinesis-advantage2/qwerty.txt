@@ -1,0 +1,6 @@
+[up]>[down]
+[down]>[up]
+[intl-\]>[kp-insert]
+[lalt]>[rwin]
+[rwin]>[lalt]
+{caps}>{-rwin}{`}{+rwin}
