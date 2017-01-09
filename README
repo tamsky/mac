@@ -1,7 +1,1 @@
-TODO
- - create bootstrap.sh
- - rename files with leading dot('.') to just capitalized (aka 'Bash_rc' vs '.bashrc')
-
- - [ ]  migrate https://github.com/tamsky/dotfiles/blob/master/.emacs.d/mtamsky.el away from emascs-starter-kit.
- - merge https://github.com/tamsky/mac/blob/master/.Xresources into dotfiles
- 
+See https://github.com/tamsky/mac/issues/1
